@@ -1,0 +1,73 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: 1250;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 20px;
+  @include adaptiv-font(100, 24);
+}
+
+h2 {
+  color: $color-main;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 15px;
+  text-align: center;
+  @include adaptiv-font(75, 22);
+  position: relative;
+  margin: 60px auto;
+}
+
+h2::after {
+  position: absolute;
+  content: "";
+  max-width: 777px;
+  height: 6px;
+  background-color: $color-main;
+  left: 0;
+  top: 120%;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+h3 {
+  font-weight: bold;
+  letter-spacing: 3.36px;
+  color: #010101;
+  text-transform: uppercase;
+  font-size: calc(30px + 18 * (100vw / 1200));
+  @include adaptiv-font(48, 15);
+}
+
+%text-small {
+  font-size: 15px;
+  line-height: 1.67;
+  letter-spacing: 0.38px;
+  text-align: left;
+  color: #464646;
+}
+
+
+@media (min-width: 1250px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 75px;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+}

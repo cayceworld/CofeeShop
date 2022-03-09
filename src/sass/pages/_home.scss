@@ -1,0 +1,53 @@
+/* info block */
+.info-block {
+  height: 855px;
+  background: url(../../images/about-us.jpg) 0 0 / cover no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.info-block__wrapper{
+  position: relative;
+  z-index: 3;
+}
+
+.info-block::before {
+  background-color: $color-black;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.info-block__text {
+  margin-top: 146px;
+  color: $color-white;
+  position: relative;
+  font-size: 40px;
+
+  p {
+    margin-bottom: 25px;
+    font-style: italic;
+    max-width: 830px;
+  }
+
+  :last-child {
+    text-align: right;
+    max-width: 972px;
+  }
+}
+@media (max-width: 768px) {
+  .info-block__text {
+    p {
+      font-size: 25px;
+    }
+  }
+
+  .product-box__rating {
+    font-size: 16px;
+  }
+}
