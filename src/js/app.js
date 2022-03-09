@@ -1,5 +1,5 @@
 import { select, settings, classNames } from './settings.js';
-import Products from './conponents/products.js';
+import Products from './conponents/Products.js';
 
 const app = {
 
