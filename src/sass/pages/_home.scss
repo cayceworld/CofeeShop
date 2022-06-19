@@ -1,14 +1,10 @@
 /* info block */
+
 .info-block {
-  height: 855px;
+  min-height: 700px;
   background: url(../../images/about-us.jpg) 0 0 / cover no-repeat;
   position: relative;
   z-index: 0;
-}
-
-.info-block__wrapper{
-  position: relative;
-  z-index: 3;
 }
 
 .info-block::before {
@@ -23,31 +19,59 @@
   z-index: 1;
 }
 
+.info-block__wrapper {
+  position: relative;
+  z-index: 3;
+  padding: 5px;
+}
+
+.info-block__content {
+  display: flex;
+  gap: 40px;
+}
+
 .info-block__text {
-  margin-top: 146px;
+
   color: $color-white;
   position: relative;
-  font-size: 40px;
+  font-size: 34px;
+  max-width: 600px;
 
   p {
     margin-bottom: 25px;
-    font-style: italic;
-    max-width: 830px;
+
+    span {
+      font-weight: 700;
+    }
   }
 
-  :last-child {
-    text-align: right;
-    max-width: 972px;
+  p:last-child {
+    font-style: italic;
   }
 }
-@media (max-width: 768px) {
+
+.carousel-cell {
+  width: 100%;
+}
+
+.main-carousel {
+  margin-top: 130px;
+}
+
+@include for-tablet {
   .info-block__text {
     p {
       font-size: 25px;
     }
   }
 
-  .product-box__rating {
-    font-size: 16px;
+  .info-block__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-carousel {
+    margin-top: 60px;
   }
 }

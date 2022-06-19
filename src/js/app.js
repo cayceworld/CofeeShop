@@ -59,10 +59,18 @@ const app = {
         window.location.hash = '#/' + id;
 
         /* scroll window */
-        window.scrollTo({
-          top: 900,
-          behavior: 'smooth',
-        });
+
+        const home = document.getElementById('about');
+
+        if (link.classList.contains('home')) {
+          home.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          window.scrollTo({
+            top: 580,
+            behavior: 'smooth',
+          });
+        }
+
 
 
         /* close menu on click */
@@ -106,11 +114,27 @@ const app = {
 
   },
 
+  flickitySlider() {
+    var elem = document.querySelector('.main-carousel');
+    //eslint-disable-next-line
+    var flkty = new Flickity(elem, {
+      // options
+      cellAlign: 'center',
+      autoPlay: true,
+      prevNextButtons: false,
+
+    });
+    
+
+
+  },
+
   init: function () {
     const thisApp = this;
     thisApp.initData();
     thisApp.initPages();
     thisApp.initBurger();
+    thisApp.flickitySlider();
   },
 };
 

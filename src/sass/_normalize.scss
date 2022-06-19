@@ -41,4 +41,11 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit;
   font-weight: inherit;}
+
+/* disable tap select on phone */
+body{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
 /*--------------------*/

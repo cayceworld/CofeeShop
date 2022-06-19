@@ -10,7 +10,9 @@
         "images/Badge.png"],
       "image": [
         "images/coffee-1.png"
-      ]
+      ], 
+      "price": "$25",
+      "oldPrice": "$32"
     },
     {
       "id": "coffe2",
@@ -20,7 +22,9 @@
       "intensity": "9/10",
       "image": [
         "images/coffee-2.png"
-      ]
+      ], 
+      "price": "$28",
+      "oldPrice": "$36"
     },
     {
       "id": "coffe3",
@@ -30,7 +34,9 @@
       "intensity": "7/10",
       "image": [
         "images/coffee-3.png"
-      ]
+      ], 
+      "price": "$25",
+      "oldPrice": ""
     }
   ]
 }
