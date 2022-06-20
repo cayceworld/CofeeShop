@@ -118,7 +118,7 @@ const app = {
     //eslint-disable-next-line
     const swiper = new Swiper('.swiper', {
       // Optional parameters
-      spaceBetween: 20,
+      spaceBetween: 5,
       loop: true,
 
       autoplay: {
