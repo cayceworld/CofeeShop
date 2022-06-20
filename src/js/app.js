@@ -114,19 +114,17 @@ const app = {
 
   },
 
-  flickitySlider() {
-    var elem = document.querySelector('.main-carousel');
+  initSwiper() {
     //eslint-disable-next-line
-    var flkty = new Flickity(elem, {
-      // options
-      cellAlign: 'center',
-      autoPlay: true,
-      prevNextButtons: false,
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      spaceBetween: 20,
+      loop: true,
 
+      autoplay: {
+        delay: 3000,
+      },
     });
-    
-
-
   },
 
   init: function () {
@@ -134,7 +132,7 @@ const app = {
     thisApp.initData();
     thisApp.initPages();
     thisApp.initBurger();
-    thisApp.flickitySlider();
+    thisApp.initSwiper();
   },
 };
 

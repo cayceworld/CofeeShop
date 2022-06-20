@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cofee</title>
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -54,47 +53,51 @@
         <div class="container">
           <div class="info-block__wrapper" id="about">
             <h2>About Us</h2>
-            <div class="main-carousel">
-              <div class="carousel-cell">
-                <div class="info-block__content">
-                  <div class="info-block__img">
-                    <img src="./images/1.png" alt="not-found">
-                  </div>
-                  <div class="info-block__text">
-                    <p>Ping <span>Nihao</span></p>
-                    <p>Ping is the youngest in the team. He doesn't like calling coffee a mysterious act.
-                      He says, a good coffee is like a mathematical formula. Once you figured it out, every
-                      coffee you make is a masterpiece.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-cell">
-                <div class="info-block__content">
-                  <div class="info-block__img">
-                    <img src="./images/3.png" alt="not-found">
-                  </div>
-                  <div class="info-block__text">
-                    <p>Elizabeth <span>Doherty</span></p>
-                    <p>Experienced barista from Bahamas. She says that Venezuela has opened
-                      her eye on coffee. "it's not about the taste", she says. "It's all about the feelings".
-                    </p>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="info-block__content">
+                    <div class="info-block__img">
+                      <img src="./images/1.png" alt="not-found">
+                    </div>
+                    <div class="info-block__text">
+                      <p>Ping <span>Nihao</span></p>
+                      <p>Ping is the youngest in the team. He doesn't like calling coffee a mysterious act.
+                        He says, a good coffee is like a mathematical formula. Once you figured it out, every
+                        coffee you make is a masterpiece.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-cell">
-                <div class="info-block__content">
-                  <div class="info-block__img">
-                    <img src="./images/2.png" alt="not-found">
+                <div class="swiper-slide">
+                  <div class="info-block__content">
+                    <div class="info-block__img">
+                      <img src="./images/3.png" alt="not-found">
+                    </div>
+                    <div class="info-block__text">
+                      <p>Elizabeth <span>Doherty</span></p>
+                      <p>Experienced barista from Bahamas. She says that Venezuela has opened
+                        her eye on coffee. "it's not about the taste", she says. "It's all about the feelings".
+                      </p>
+                    </div>
                   </div>
-                  <div class="info-block__text">
-                    <p>Max <span>Selfish</span>
-                    </p>
-                    <p>
-                      Max is the austrian barista with years of experience from the hotels across th whole Europe.
-                      "Venezuela coffee was a lightening experience for me! I have never drink such an amazing coffee!",
-                      he says.
-                    </p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info-block__content">
+                    <div class="info-block__img">
+                      <img src="./images/2.png" alt="not-found">
+                    </div>
+                    <div class="info-block__text">
+                      <p>Max <span>Selfish</span>
+                      </p>
+                      <p>
+                        Max is the austrian barista with years of experience from the hotels across th whole Europe.
+                        "Venezuela coffee was a lightening experience for me! I have never drink such an amazing coffee!",
+                        he says.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -160,11 +163,12 @@
   </div>
   </script>
 
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://kit.fontawesome.com/88d9279756.js" crossorigin="anonymous"></script>
 
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/app.js" type="module"></script>
 </body>
 

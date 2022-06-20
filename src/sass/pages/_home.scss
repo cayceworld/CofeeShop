@@ -50,13 +50,10 @@
   }
 }
 
-.carousel-cell {
-  width: 100%;
+.swiper {
+  padding-top: 50px;
 }
 
-.main-carousel {
-  margin-top: 130px;
-}
 
 @include for-tablet {
   .info-block__text {
@@ -71,7 +68,7 @@
     text-align: center;
   }
 
-  .main-carousel {
-    margin-top: 60px;
+  .swiper {
+    padding-top: 25px;
   }
 }
